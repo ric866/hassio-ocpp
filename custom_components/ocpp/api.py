@@ -121,7 +121,7 @@ class CentralSystem:
         self.hass.services.async_register(
             DOMAIN,
             csvcs.service_trigger_custom_message.value,
-            self.trigger_custom_message,
+            self.handle_trigger_custom_message,
         )
         self.hass.services.async_register(
             DOMAIN,
